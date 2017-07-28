@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2017 Membership Application
+    </title>
+    <link rel="stylesheet" type="text/css" href = "stylesheet.css">
+    <script src="./src/Membership.js"></script>
+</head>
+<h1><Strong>2017 Membership Application</Strong></h1>
+<body>
+All Applicants must read and agree to the following:
+I (or We), the undersigned Applicant(s), for myself and my heirs, executors, administrators, successors, and assigns, understand that in accordance with the Bylaws of the Dallas Yacht Club (“DYC”), each membership application submitted to the DYC must be approved by the DYC Board of Directors.  Upon approval of my membership application, I hereby release and hold harmless forever the DYC and its members, directors, officer, representatives, and agents from any claim, cause of action, liability (whether in contract or tort, including personal injury or death), loss, expense (including attorney and other legal fees), and /or cost of any nature whatsoever arising from or associated with (i) my membership in the DYC;(ii) my participation in, attendance at, or traveling to or from any event, function, or gathering presented, sponsored, endorsed, or recommended by the DYC; (iii) my presence at or on or utilization of any real or personal property owned, leased, operated, or maintained by DYC.  I understand and acknowledge that I am solely responsible at all times for my own conduct, for that of my children and my guests, and for my vessel or vehicle and its operation.
+
+<br>
+Printed name: <input type="text" name="printedname1">
+<br>
+Date: <input type="text" name="date1">
+<br>
+E-Signature  - I confirm printed signature
+<input type="checkbox" name="Signature 1" value="Signature1"><br>
+Printed name - spouse or significan other: <input type="text" name="printedname2">
+<br>
+Date: <input type="text" name="date2">
+<br>
+E-Signature - I confirm printed signature
+<input type="checkbox" name="Signature 2" value="Signature2"><br>
+
+    <strong>MEMBERSHIP INFORMATION</strong><br>
+
+    TYPE OF APPLICATION <br>
+    <input type="radio" name="membership" value="New membership">New membership<br>
+    <input type="radio" name="membership" value="Renewal of Current Membership">Renewal of Current Membership <br>
+    <input type="radio" name="membership" value="Change of Information">Change of Information <br>
+
+    APPLICANT NAME: <input type="text" name="firstlastname"><br>
+
+    SPOUSE OR SIGNIFICANT OTHER NAME: <input type="text" name="spousename"><br>
+
+    CHILDREN (Under age 18): <input type="text" name="children"><br>
+    ADDRESS:
+    Street <input type="text" name="street"><br>
+    City <input type="text" name="city"><br>
+    State <input type="text" name="state"><br>
+    Zip <input type="text" name="zip"><br>
+    PHONE NUMBERS:
+    HOME <input type="text" name="homephone"><br>
+    Work <input type="text" name="workhome"><br>
+    Cell 1 <input type="text" name="cell 1"><br>
+    Cell 2 <input type="text" name="cell 2"><br>
+    EMAIL ADDRESS:
+    You <input type="text" name="email"><br>
+    EMAIL ADDRESS: Spouse or Significant Other <input type="text" name="emailspouse"><br>
+    OCCUPATION:
+    Your Employer <input type="text" name="employer"><br>
+    Position <input type="text" name="position"><br>
+    Industry <input type="text" name="industry"><br>
+    Occupation: Spouse or Significant Other <input type="text" name="spouseemployer"><br>
+    Interested in knowing more about the charities the DYC supports?<br>
+    <input type="radio" name="DCYcharities" value="Yes">Yes<br>
+    <input type="radio" name="DCYcharities" value="No">No<br>
+    <!--more-->
+    BOAT TYPE<br>
+    <input type="radio" name="boattype" value="Power">Power<br>
+    <input type="radio" name="boattype" value="Sail">Sail<br>
+    BOAT MAKE <input type="text" name="boatmake"><br>
+    SIZE <input type="text" name="size"><br>
+    FT <input type="text" name="FT"><br>
+    BOAT NAME <input type="text" name="boatname"><br>
+    MARINA <input type="text" name="marinaname"><br>
+    DOCK NO. <input type="text" name="docknumber"><br>
+    SLIP NO. <input type="text" name="slipnumber"><br>
+    Unless you request otherwise, your name(s), telephone numbers, e-mail addresses, boat information, and slip location may be printed in the DYC directory.  Please indicate below what portions of that information you do NOT want printed in the directory:
+    <textarea cols="50" rows="3" maxlength="60"></textarea>
+    DUES AND PAYMENT
+    Please check the type of membership being applied for by this application. Children under the age of 18, living with you are included in the family membership categories. Events have a $10 per person entry fee which is waived for Platinum memberships.  (Additional fees required for Chamoniox and Commodore’s Ball events.)
+    Per event all non-members / guests are $25.00 each, kids 3-10 years old are $15.00.<br>
+    <input type="radio" name="membershiptype" value="PlatinumFamily">Platinum Family Membership $300.00 (2 Adults) $10 event fees waived<br>
+    <input type="radio" name="membershiptype" value="PlatinumSingle">Platinum Single Membership $150.00 (1 Adult) $10 event fee waived<br>
+    <input type="radio" name="membershiptype" value="RegularFamily">Regular Family Membership $200.00 (2 Adults)<br>
+    <input type="radio" name="membershiptype" value="Single">Single Membership $125.00 (1 Adult)<br>
+    MEMBERSHIP DUES TOTAL: $<input type="text" name="TOTALDUES" style="width:75px"><br>
+    DYC DOCK PLATE LANGUAGE:  DYC  dock plates include your name and the name of your boat.  Please print below the information you want on the dock plate’s name line.  PRINT NAMES EXACTLY AS YOU WANT THEM TO APPEAR ON THE DOCK PLATE:  (e.g. Tom and Mary Smith or Tom & Mary, etc.) <br>
+    Line 1 – Boat Name: <input type="text" name="dockplateboatname"><br>
+    Line 2 – Your Names: <input type="text" name="dockplateyournames"><br>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="LLU45LYGETLVU">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"><br>
+        
+    </form>
+</body>
+</html>
